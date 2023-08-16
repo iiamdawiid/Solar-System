@@ -1,18 +1,17 @@
-#Solar System Program - Lists all planets in solar system + the sun and displays info after receiving user input -- more stuff being added
+# Space Program - Contains information about objects in space such as solar system planets + sun, stars in the universe, and black holes
 
 class Solar_System():
     """ Contains all solar system planets + sun and their info """
     
-
     def __init__(self, planet_choice):
         self.planet_choice = planet_choice
     
-
     def sun(self):
         sun_header = "SUN INFO"
         print(sun_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
         sun_input = input("Enter Selection: ")
+        print("\n")
 
         while sun_input not in ['I', 'II', 'III', 'IV']: 
                 print("\n**INVALID INPUT** Enter I, II, III, or IV...")
@@ -52,7 +51,6 @@ class Solar_System():
                   + "surface temperature is about 10,340 degrees Fahrenheit\n" 
                   + "(5,726 degrees Celsius).\n")
 
-
     def mercury(self):
         mercury_header = "MERCURY INFO"
         print(mercury_header.center(35, '-'))
@@ -63,7 +61,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 mercury_header = "MERCURY INFO"
                 print(mercury_header.center(35, '-')) 
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 mercury_input = input("Enter Selection: ")
 
         if mercury_input == 'I':
@@ -111,9 +109,6 @@ class Solar_System():
                   + "The mean temperature of Mercury is 333 °F. The average temperature of Mercury's\n" 
                   + "surface is about 354 °F.\n")
             
-        
-
-
     def venus(self):
         venus_header = "VENUS INFO"
         print(venus_header.center(35, '-'))
@@ -124,7 +119,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 venus_header = "VENUS INFO"
                 print(venus_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 venus_input = input("Enter Selection: ")
 
         if venus_input == 'I':
@@ -174,9 +169,6 @@ class Solar_System():
                   + "event about 700 million years ago triggered a runaway greenhouse effect, which\n" 
                   + "caused the planet's atmosphere to become incredibly dense and hot.\n")
             
-        
-
-
     def earth(self):
         earth_header = "EARTH"
         print(earth_header.center(35, '-'))
@@ -187,7 +179,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, or III...")
                 earth_header = "EARTH"
                 print(earth_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Composition\n(III) Temperature")
                 earth_input = input("Enter Selection: ")
 
         if earth_input == 'I':
@@ -217,9 +209,6 @@ class Solar_System():
             print("The average temperature of the Earth's surface is about 59°F (15°C).\n" 
                   + "This includes both terrestrial and marine environments.\n")
         
-        
-
-
     def mars(self):
         mars_header = "MARS"
         print(mars_header.center(35, '-'))
@@ -230,7 +219,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 mars_header = "MARS"
                 print(mars_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 mars_input = input("Enter Selection: ")
 
         if mars_input == 'I':
@@ -286,9 +275,6 @@ class Solar_System():
                   + "daytime temperatures on Mars can peak at about 290 K (62 °F, 17 °C). At night, temperatures can\n" 
                   + "rapidly fall to as low as minus 100 degrees Fahrenheit. Temperatures at the poles on Mars are even\n" 
                   + "colder.\n")
-            
-
-    
 
     def jupiter(self):
         jupiter_header = "JUPITER INFO"
@@ -300,7 +286,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 jupiter_header = "JUPITER INFO"
                 print(jupiter_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 jupiter_input = input("Enter Selection: ")
 
         if jupiter_input == 'I':
@@ -347,9 +333,6 @@ class Solar_System():
                   + "into a dense fluid. This gives Jupiter the largest ocean in the solar system, made of hydrogen instead\n" 
                   + "of water. Jupiter may also have a solid inner core about the size of Earth.\n")
             
-        
-
-
     def saturn(self):
         saturn_header = "SATURN INFO"
         print(saturn_header.center(35, '-'))
@@ -360,7 +343,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 saturn_header = "SATURN INFO"
                 print(saturn_header.center(35, '-')) 
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 saturn_input = input("Enter Selection: ")
 
         if saturn_input == 'I':
@@ -406,9 +389,6 @@ class Solar_System():
                   + "atmosphere has a temperature range of -173 degrees Celsius (-280 degrees Fahrenheit) to -113 degrees Celsius\n" 
                   + "(-170 degrees Fahrenheit). Saturn's environment is not conducive to life as we know it. The temperatures,\n" 
                   + "pressures, and materials on the planet are likely too extreme and volatile for organisms to adapt to.\n")
-        
-        
-
 
     def uranus(self):
         uranus_header = "URANUS INFO"
@@ -420,7 +400,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 uranus_header = "URANUS INFO"
                 print(uranus_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 uranus_input = input("Enter Selection: ")
 
         if uranus_input == 'I':
@@ -464,9 +444,6 @@ class Solar_System():
                   + "from the Sun, but also because billions of years ago, something big crashed into Uranus, causing a large amount of energy\n" 
                   + "and heat to escape from its core.\n")
         
-        
-
-    
     def neptune(self):
         neptune_header = "NEPTUNE INFO"
         print(neptune_header.center(35, '-'))
@@ -477,7 +454,7 @@ class Solar_System():
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
                 neptune_header = "NEPTUNE INFO"
                 print(neptune_header.center(35, '-'))
-                print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
+                print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
                 neptune_input = input("Enter Selection: ")
 
         if neptune_input == 'I':
@@ -519,13 +496,130 @@ class Solar_System():
                   + "its core, Neptune reaches temperatures of up to 12,632°F (7,000°C), which is comparable to the surface of the Sun.\n" 
                   + "The huge temperature differences between Neptune's center and its surface create huge wind storms, which can reach\n" 
                   + "as high as 2,100 km/hour.\n")
-            
+
+
+
+class Stars():
+    """ Holds all the functions for the star menu option """
+    
+    def __init__(self, star_choice):
+        self.star_choice = star_choice
+
+    def what_is_star(self):
+        star_def = "WHAT IS A STAR"
+        print(star_def.center(35, '-'))
+        print("A star is a massive, self-luminous celestial body of gas that shines with radiation from its internal energy sources.\n" 
+              + "Stars are made of mostly hydrogen and helium gas and are held together by their own gravity. Stars shine because of\n" 
+              + "nuclear fusion, a process that occurs in the core of a star. In this process, hydrogen atoms smash together to form\n" 
+              + "helium, releasing huge amounts of energy that heats the gas. This process also produces photons and heat, as well as\n" 
+              + "small amounts of heavier elements. Stars are a fundamental component of the universe and collectively form star\n" 
+              + "clusters, galaxies, and galaxy clusters. The nearest star to Earth is the Sun. Only a very small percentage of\n" 
+              + "the tens of billions of trillions of stars in the observable universe are visible to the naked eye.\n")
+        
+    def star_composition(self):
+        star_comp = "STAR COMPOSITION"
+        print(star_comp.center(35, '-'))
+        print("Stars are made of very hot gases, mostly hydrogen and helium, the two lightest elements in the universe. Stars\n" 
+              + "also contain small amounts of other elements, such as oxygen, nitrogen, and carbon. Most stars in the galaxy\n" 
+              + "are chemically similar to the sun, which is about 74% hydrogen, 24 percent helium, and 2 percent other elements.\n" 
+              + "The elements heavier than helium are conventionally grouped together under the term metals. Stars are so big that\n" 
+              + "they have enormous mass, even though they're made of light gases.\n")
+        
+    def star_formation(self):
+        star_form = "STAR FORMATION"
+        print(star_form.center(35, '-'))
+        print("Stars form from a large cloud of gas and dust in space that slowly contracts due to gravity. The cloud fragments\n" 
+              + "into clumps, which then collapse into stars. The process takes around a million years. The force of gravity\n" 
+              + "compresses atoms in the interstellar gas until the fusion reactions begin. The fusion process involves the\n" 
+              + "combining of light chemical nuclei to form heavier ones. This process releases energy such as light and\n" 
+              + "ultraviolet radiation, which is responsible for the luminosity of stars. Depending on their mass, stars\n" 
+              + "can evolve into white dwarfs, neutron stars, or black holes.\n")
+        
+    def biggest_stars(self):
+        big_stars = "BIGGEST STARS IN THE UNIVERSE"
+        print(big_stars.center(35, '-'))
+        print("(I) VY Canis Majoris\n(II) WOH G64\n(III) V354 Cephei\n(IV) UY Scuti\n(V) KY Cygni")
+        big_star_choice = input("Select a choice or enter Q to Quit: ")
+        print("\n")
+        return big_star_choice
+    
+    def canis_majoris(self):
+        canis = "VY CANIS MAJORIS"
+        print(canis.center(35, '-'))
+        print("VY Canis Majoris (VY CMa) is a red supergiant or red hypergiant star located in the constellation Canis Major,\n" 
+              + "which means 'great dog' in Latin. VY Canis Majoris is one of the largest known stars, with an estimated radius\n" 
+              + "at least 1,420 times that of the Sun. The star is also around 270,000 times brighter than our sun. VY Canis\n" 
+              + "Majoris is located approximately 3,820 light-years from Earth. It is estimated to have around 17 solar\n" 
+              + "masses. If placed in our Solar System, VY Canis Majoris would extend out to the orbit of Saturn. Hypergiant\n" 
+              + "stars like VY Canis Majoris are extremely rare in our galaxy. Most stars in the Milky Way are smaller than the sun.\n")
+
+    def woh(self):
+        woh = "WOH G64"
+        print(woh.center(35, '-'))
+        print("WOH G64 is a red supergiant star located in the Large Magellanic Cloud (LMC). It's one of the largest stars discovered\n" 
+              + "so far, and is thought to be the largest star in the LMC. WOH G64 has a number of properties that set it apart from\n" 
+              + "other red supergiants in the LMC, including: A thick circumstellar dust torus, An unusually late spectral type, Maser\n" 
+              + "activity, Nebular emission lines. WOH G64 was discovered in 1981. It's located in the constellation Dorado, and is\n" 
+              + "160,000 light years from Earth.\n")
+
+    def cephei(self):
+        cephei = "V354 Cephei"
+        print(cephei.center(35, '-'))
+        print("V354 Cephei is a red supergiant star located in the constellation Cepheus. It is one of the largest known stars, with\n" 
+              + "a diameter between 690 and 1,520 times bigger than the Sun. V354 Cephei is located within the Milky Way, about 8,900\n" 
+              + "light-years away from the Sun. It has an estimated radius of 685 solar radii, or 477,000,000 km. V354 Cephei is an\n" 
+              + "irregular variable star.\n")
+
+    def scuti(self):
+        scuti = "UY SCUTI"
+        print(scuti.center(35, '-'))
+        print("UY Scuti is a red hypergiant or red supergiant star located in the constellation Scutum. It is considered one of the\n" 
+              + "largest known stars by radius. UY Scuti has an estimated radius of 1,708 solar radii, which is around 1,700 times\n" 
+              + "larger than the Sun. It has a maximum brightness of magnitude 8.29 and a minimum of magnitude 10.56. UY Scuti is\n" 
+              + "also classified as a pulsating variable star, with an approximate pulsation period of 740 days. It is a dust-\n"
+              + "enshrouded bright red supergiant. UY Scuti was discovered in 1860. It is approximately 9,500 light-years away.\n"
+              + "from earth.")
+
+    def cygni(self):
+        cygni = "KY CYGNI"
+        print(cygni.center(35, '-'))
+        print("KY Cygni is a red supergiant star in the Cygnus constellation. It is one of the largest stars known, with a radius\n" 
+              + "of about 1,420–1,503 R☉ (6.60–6.99 au). If it were placed at the center of the Solar System, it would extend past\n" 
+              + "the orbit of Jupiter (or Saturn). KY Cygni was discovered in 1930. It is not visible from Earth because it emits a\n" 
+              + "large amount of light in the infrared spectrum and the blocking effect of interstellar dust on the visible component.\n" 
+              + "KY Cygni is losing mass at around 4.9×10−6 M ☉ and has been described as a cool hypergiant. Its surface temperature\n" 
+              + "is around 3,500 K. It is approximately 5,000 light-years away from Earth.\n")
+        
+
+# NOT FINISHED
+class Blackholes():
+    """ Holds all the options for blackholes """
+
+    def __init__(self, blackhole_choice):
+        self.blackhole_choice = blackhole_choice
+
+    def what_are_blackholes(self):
+        what_are_blackholes = "WHAT ARE BLACK HOLES?"
+        print(what_are_blackholes.center(35, '-'))
+        print("A black hole is a region of space where gravity is so strong that nothing, including light, can escape it. The gravity\n" 
+              + "is so strong because matter has been squeezed into a tiny space. This can happen when a star is dying. Black holes are\n" 
+              + "invisible because no light can get out. However, the material around a black hole is visible. Material falling into a\n" 
+              + "black hole forms a disk, similar to a whirlpool in a bathtub drain. Black holes can recycle cosmological debris, stabilize\n" 
+              + "the formation of galaxies, define the shape of galaxies, and stratify space around them.\n")
+
+    
         
 
 
 
+def start_menu():
+    print("\nChoose what to learn about...")
+    print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe")
+    menu_choice = input("Select a choice or enter Q to Quit: ")
+    print("\n")
+    return menu_choice
+
 def program_start():
-    
     flag_ = True  
     c_str = "Space Program"
     print(c_str.center(35, '-'))
@@ -537,7 +631,26 @@ def planet_selection():
     print("(I) Sun\n(II) Mercury\n(III) Venus\n(IV) Earth\n(V) Mars\n(VI) Jupiter\n"
           + "(VII) Saturn\n(VIII) Uranus\n(IX) Neptune\n")
     planet_choice = input("Select a Planet or the Sun or enter Q to Quit: ")
+    print("\n")
     return planet_choice
+
+def star_selection():
+    stars = "STARS OF THE UNIVERSE"
+    print(stars.center(35, '-'))
+    print("(I) What is a star?\n(II) What are stars made of?\n(III) How do stars form?\n(IV) Biggest Stars in the Universe")
+    star_choice = input("Select an option or enter Q to Quit: ")
+    print("\n")
+    return star_choice
+
+#not done
+def blackhole_selection():
+    black_holes = "BLACK HOLES"
+    print(black_holes.center(35, '-'))
+    print("(I) What Is a Black Hole?\n(II) How Do Black Holes Form?\n(III) What Is Inside a Black Hole?\n" 
+          + "(IV) What Would Happen if You Entered a Black Hole?\n(V) Nearest Black Hole to Earth\n(VI) Biggest Known Black Holes")
+    black_hole_choice = input("Select and option or enter Q to Quit: ")
+    print("\n")
+    return black_hole_choice
 
 
 # main
@@ -552,45 +665,101 @@ while flag:
             flag = False
         
         elif start == 'C':
+            # call start menu function - displays choices such as solar system, blackholes, stars
+            menu_choice = start_menu()
             
-            # call program to list planets
-            p_select = planet_selection()
-            planet = Solar_System(p_select)
-        
-            while p_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'Q']:
+            while menu_choice not in ['I', 'II', 'III', 'Q']:
                 print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                menu_choice = start_menu()
+
+            if menu_choice == 'I':
                 p_select = planet_selection()
+                planet = Solar_System(p_select)
+        
+                while p_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'Q']:
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                    p_select = planet_selection()
 
-            if p_select == 'I':
-                planet.sun()
+                if p_select == 'I':
+                    planet.sun()
 
-            elif p_select == 'II':
-                planet.mercury()
+                elif p_select == 'II':
+                    planet.mercury()
 
-            elif p_select == 'III':
-                planet.venus()
+                elif p_select == 'III':
+                    planet.venus()
 
-            elif p_select == 'IV':
-                planet.earth()
+                elif p_select == 'IV':
+                    planet.earth()
 
-            elif p_select == 'V':
-                planet.mars()
+                elif p_select == 'V':
+                    planet.mars()
             
-            elif p_select == 'VI':
-                planet.jupiter()
+                elif p_select == 'VI':
+                    planet.jupiter()
 
-            elif p_select == 'VII':
-                planet.saturn()
+                elif p_select == 'VII':
+                    planet.saturn()
 
-            elif p_select == 'VIII':
-                planet.uranus()
+                elif p_select == 'VIII':
+                    planet.uranus()
 
-            elif p_select == 'IX':
-                planet.neptune()
+                elif p_select == 'IX':
+                    planet.neptune()
 
-            elif p_select == 'Q':
+                elif p_select == 'Q':
+                    flag = False
+            
+            elif menu_choice == 'II':
+                #stars
+                s_select = star_selection()
+                star = Stars(s_select)
+
+                while s_select not in ['I', 'II', 'III', 'IV', 'Q']:
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    s_select = star_selection()
+                
+                if s_select == 'I':
+                    star.what_is_star()
+                
+                elif s_select == 'II':
+                    star.star_composition()
+                
+                elif s_select == 'III':
+                    star.star_formation()
+                
+                elif s_select == 'IV':
+                    big_star_choice = star.biggest_stars()
+                    
+                    if big_star_choice == 'I':
+                        star.canis_majoris()
+                    
+                    elif big_star_choice == 'II':
+                        star.woh()
+                    
+                    elif big_star_choice == 'III':
+                        star.cephei()
+                    
+                    elif big_star_choice == 'IV':
+                        star.scuti()
+                    
+                    elif big_star_choice == 'V':
+                        star.cygni()
+
+                    elif big_star_choice == 'Q':
+                        flag = False
+
+                elif s_select == 'Q':
+                    flag = False 
+
+            elif menu_choice == 'III':
+                #blackholes
+                s_select = blackhole_selection()
+
+            elif menu_choice == 'Q':
                 flag = False
-
+            
+            
         else:
             end_case = input("\n**INVALID INPUT**\nEnter C to Continue or Q to Quit: ")
             if end_case == 'Q':
