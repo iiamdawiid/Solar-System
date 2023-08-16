@@ -3,9 +3,11 @@
 class Solar_System():
     """ Contains all solar system planets + sun and their info """
     
+
     def __init__(self, planet_choice):
         self.planet_choice = planet_choice
     
+
     def sun(self):
         sun_header = "SUN INFO"
         print(sun_header.center(35, '-'))
@@ -275,7 +277,7 @@ class Solar_System():
                   + "daytime temperatures on Mars can peak at about 290 K (62 °F, 17 °C). At night, temperatures can\n" 
                   + "rapidly fall to as low as minus 100 degrees Fahrenheit. Temperatures at the poles on Mars are even\n" 
                   + "colder.\n")
-
+            
     def jupiter(self):
         jupiter_header = "JUPITER INFO"
         print(jupiter_header.center(35, '-'))
@@ -389,7 +391,7 @@ class Solar_System():
                   + "atmosphere has a temperature range of -173 degrees Celsius (-280 degrees Fahrenheit) to -113 degrees Celsius\n" 
                   + "(-170 degrees Fahrenheit). Saturn's environment is not conducive to life as we know it. The temperatures,\n" 
                   + "pressures, and materials on the planet are likely too extreme and volatile for organisms to adapt to.\n")
-
+        
     def uranus(self):
         uranus_header = "URANUS INFO"
         print(uranus_header.center(35, '-'))
@@ -591,27 +593,110 @@ class Stars():
               + "is around 3,500 K. It is approximately 5,000 light-years away from Earth.\n")
         
 
-# NOT FINISHED
+
 class Blackholes():
     """ Holds all the options for blackholes """
 
     def __init__(self, blackhole_choice):
         self.blackhole_choice = blackhole_choice
 
-    def what_are_blackholes(self):
-        what_are_blackholes = "WHAT ARE BLACK HOLES?"
-        print(what_are_blackholes.center(35, '-'))
+    def what_is_blackhole(self):
+        what_is_blackhole = "WHAT ARE BLACK HOLES?"
+        print(what_is_blackhole.center(35, '-'))
         print("A black hole is a region of space where gravity is so strong that nothing, including light, can escape it. The gravity\n" 
               + "is so strong because matter has been squeezed into a tiny space. This can happen when a star is dying. Black holes are\n" 
               + "invisible because no light can get out. However, the material around a black hole is visible. Material falling into a\n" 
               + "black hole forms a disk, similar to a whirlpool in a bathtub drain. Black holes can recycle cosmological debris, stabilize\n" 
               + "the formation of galaxies, define the shape of galaxies, and stratify space around them.\n")
+        
+    def blackhole_formation(self):
+        blackhole_formation = "HOW DO BLACK HOLES FORM"
+        print(blackhole_formation.center(35, '-'))
+        print("Black holes form when an object reaches a critical density, and its gravity causes it to collapse to an almost infinitely\n" 
+              + "small pinpoint. Stellar black holes form when the center of a very massive star collapses in on itself. This collapse also\n" 
+              + "causes a supernova, or an exploding star, that blasts part of the star into space. Black holes take up zero space, but do\n" 
+              + "have mass. A black hole can have a mass of tens of times the mass of the Sun. It was long thought that black holes are\n" 
+              + "impossible to destroy. But we now know that black holes actually evaporate, slowly returning their energy to the Universe.\n")
+
+    def inside_blackhole(self):
+        inside_blackhole = "WHAT IS INSIDE A BLACK HOLE"
+        print(inside_blackhole.center(35, '-'))
+        print("The center of a black hole contains a singularity, which is a point that is infinitely small and dense. The singularity is made\n" 
+              + "of matter that is compressed into an infinitely tiny point, breaking down all conceptions of time and space. Singularities are\n" 
+              + "mathematically impossible. Black holes also have an event horizon, which is the surface of the black hole where gravity is too\n" 
+              + "strong for anything to escape.\n")
+
+    def enter_blackhole(self):
+        enter_blackhole = "ENTERING A BLACK HOLE"
+        print(enter_blackhole.center(35, '-'))
+        print("If you fell into a black hole, you would be torn apart by the extreme gravity. The intense gravity would pull you apart, separating\n" 
+              + "your bones, muscles, sinews, and even molecules. This process is called 'spaghettification'. You would be 'spaghettified' by the\n" 
+              + "black hole's tidal forces even before you reach the event horizon, the point of no return. The event horizon is the point at which\n" 
+              + "the gravitational pull becomes so strong that you can't escape. No material, especially fleshy human bodies, could survive intact.\n" 
+              + "Once you pass beyond the event horizon, there's no getting out.\n")
+
+    def nearest_bh_earth(self):
+        nearest_bh = "NEAREST BLACK HOLE TO EARTH"
+        print(nearest_bh.center(35, '-'))
+        print("The nearest known black hole to Earth is Gaia BH1, which is 1,560 light-years away in the direction of the constellation Ophiuchus.\n" 
+              + "It was discovered in September 2022 by a team led by Kareem El-Badry. Gaia BH1 is about three times closer to Earth than the\n" 
+              + "previous record holder. It is about ten times the size of the Sun and has a Sun-like star orbiting it. Astronomers were able\n" 
+              + "to determine the black hole was there by looking at the behavior of a star near the black hole, despite never seeing it directly.\n")
+
+    def biggest_blackholes(self):
+        biggest_blackholes = "BIGGEST BLACK HOLES"
+        print(biggest_blackholes.center(35, '-'))
+        print("(I) Phoenix A\n(II) TON 618\n(III) Holm 15A\n(IV) IC 1101\n(V) S5 0014+81")
+        blackhole_choice = input("Select a choice or enter Q to Quit: ")
+        print("\n")
+        return blackhole_choice
+    
+    def phoenix_a(self):
+        phoenix_a = "PHOENIX A"
+        print(phoenix_a.center(35, '-'))
+        print("The Phoenix-A Black Hole is the largest and most massive black hole ever discovered. It has a mass of 100 billion solar masses,\n" 
+              + "which is 100 billion times more massive than the sun. The Phoenix-A Black Hole is located in the Phoenix Cluster, approximately\n" 
+              + "5.8 to 8.57 billion light years away from Earth. The Phoenix Cluster is one of the most intensely studied galaxy clusters in our\n" 
+              + "universe. While black holes typically form when massive stars die in supernova explosions, the Phoenix-A Black Hole is probably\n" 
+              + "the result of the collision of multiple supermassive black holes that formed shortly after the big bang.\n")
+
+    def ton_618(self):
+        ton_618 = "TON 618"
+        print(ton_618.center(35, '-'))
+        print("TON 618 is a quasar that contains the largest, brightest, and most massive black hole known. It is located in the constellation Canes\n" 
+              + "Venatici, 18.2 billion light-years away. The black hole is 66 billion times more massive than the Sun, and 11 solar systems could fit\n" 
+              + "inside it. The Lyman-alpha nebula surrounding TON 618 has a diameter of at least 100 kiloparsecs (320,000 light-years), which is twice\n" 
+              + "the size of the Milky Way. The light from the quasar is estimated to be 10.8 billion years old. TON 618 is not visible from Earth\n" 
+              + "because the quasar outshines the surrounding galaxy.\n")
+
+    def holm_15A(self):
+        holm_15A = "HOLM 15A"
+        print(holm_15A.center(35, '-'))
+        print("The black hole at the center of Holm 15A is a supermassive black hole with a mass of 40 billion solar masses, or 40 billion times the\n" 
+              + "mass of the Sun. This makes it one of the largest black holes ever discovered. The black hole is located in the elliptical galaxy\n" 
+              + "Holm 15A, which is the dominant galaxy in the Abell 85 galaxy cluster. The black hole is 700 million light years away from Earth.\n" 
+              + "To calculate the black hole's mass, astronomers took a snapshot of the stars orbiting the black hole and created a model. The black\n" 
+              + "hole is much larger than the Milky Way's central black hole, Sagittarius A*, which has a mass of 4 million solar masses.\n")
+
+    def ic_1101(self):
+        ic_1101 = "IC 1101"
+        print(ic_1101.center(35, '-'))
+        print("The black hole in IC 1101 is a supermassive black hole with an estimated mass of 50 to 70 billion solar masses. This is one of the\n" 
+              + "largest black holes ever detected. The black hole is located at the center of IC 1101 and is associated with a bright radio source\n" 
+              + "that emits two jets. IC 1101 is a supergiant elliptical galaxy, which means it is devoid of gas and has a very low star formation\n" 
+              + "rate. The galaxy is located at 354.0 megaparsecs (1.15 billion light-years) from Earth.\n")
+
+    def s5_0014(self):
+        s5_0014 = "S5 0014+81"
+        print(s5_0014.center(35, '-'))
+        print("S5 0014+81 is a supermassive black hole with a mass of 40 billion solar masses. It is located in the constellation of Cepheus, 12.1\n" 
+              + "billion light years from Earth. The black hole was formed 1.6 billion years after the Big Bang. S5 0014+81 has a diameter of 240\n" 
+              + "billion kilometers, which is more than 20 times the orbit of Pluto. It is also producing a quasar that is one of the brightest\n" 
+              + "known objects in the universe. The quasar has a brightness of 300 trillion suns. S5 0014+81 is estimated to consume 4,000 solar\n" 
+              + "masses of matter annually. It is also a strong source of radiation, including gamma, X-ray, and radio waves.\n")
 
     
         
-
-
-
 def start_menu():
     print("\nChoose what to learn about...")
     print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe")
@@ -642,7 +727,6 @@ def star_selection():
     print("\n")
     return star_choice
 
-#not done
 def blackhole_selection():
     black_holes = "BLACK HOLES"
     print(black_holes.center(35, '-'))
@@ -651,6 +735,7 @@ def blackhole_selection():
     black_hole_choice = input("Select and option or enter Q to Quit: ")
     print("\n")
     return black_hole_choice
+
 
 
 # main
@@ -669,7 +754,7 @@ while flag:
             menu_choice = start_menu()
             
             while menu_choice not in ['I', 'II', 'III', 'Q']:
-                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
                 menu_choice = start_menu()
 
             if menu_choice == 'I':
@@ -677,7 +762,7 @@ while flag:
                 planet = Solar_System(p_select)
         
                 while p_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'Q']:
-                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
                     p_select = planet_selection()
 
                 if p_select == 'I':
@@ -710,6 +795,7 @@ while flag:
                 elif p_select == 'Q':
                     flag = False
             
+
             elif menu_choice == 'II':
                 #stars
                 s_select = star_selection()
@@ -752,13 +838,61 @@ while flag:
                 elif s_select == 'Q':
                     flag = False 
 
+
             elif menu_choice == 'III':
                 #blackholes
-                s_select = blackhole_selection()
+                b_select = blackhole_selection()
+                blackhole = Blackholes(b_select)
+
+                while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    b_select = blackhole_selection()
+
+                if b_select == 'I':
+                    blackhole.what_is_blackhole()
+
+                elif b_select == 'II':
+                    blackhole.blackhole_formation()
+
+                elif b_select == 'III':
+                    blackhole.inside_blackhole()
+
+                elif b_select == 'IV':
+                    blackhole.enter_blackhole()
+
+                elif b_select == 'V':
+                    blackhole.nearest_bh_earth()
+
+                elif b_select == 'VI':
+                    blackhole_choice = blackhole.biggest_blackholes()
+
+                    while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                        print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                        blackhole_choice = blackhole.biggest_blackholes()
+
+                    if blackhole_choice == 'I':
+                        blackhole.phoenix_a()
+
+                    elif blackhole_choice == 'II':
+                        blackhole.ton_618()
+
+                    elif blackhole_choice == 'III':
+                        blackhole.holm_15A()
+
+                    elif blackhole_choice == 'IV':
+                        blackhole.ic_1101()
+
+                    elif blackhole_choice == 'V':
+                        blackhole.s5_0014()
+
+                    elif blackhole_choice == 'Q':
+                        flag = False
+
+                elif b_select == 'Q':
+                    flag = False
 
             elif menu_choice == 'Q':
                 flag = False
-            
             
         else:
             end_case = input("\n**INVALID INPUT**\nEnter C to Continue or Q to Quit: ")
