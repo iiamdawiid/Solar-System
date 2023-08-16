@@ -3,11 +3,9 @@
 class Solar_System():
     """ Contains all solar system planets + sun and their info """
     
-
     def __init__(self, planet_choice):
         self.planet_choice = planet_choice
     
-
     def sun(self):
         sun_header = "SUN INFO"
         print(sun_header.center(35, '-'))
@@ -498,7 +496,7 @@ class Solar_System():
                   + "its core, Neptune reaches temperatures of up to 12,632°F (7,000°C), which is comparable to the surface of the Sun.\n" 
                   + "The huge temperature differences between Neptune's center and its surface create huge wind storms, which can reach\n" 
                   + "as high as 2,100 km/hour.\n")
-
+            
 
 
 class Stars():
@@ -694,12 +692,127 @@ class Blackholes():
               + "billion kilometers, which is more than 20 times the orbit of Pluto. It is also producing a quasar that is one of the brightest\n" 
               + "known objects in the universe. The quasar has a brightness of 300 trillion suns. S5 0014+81 is estimated to consume 4,000 solar\n" 
               + "masses of matter annually. It is also a strong source of radiation, including gamma, X-ray, and radio waves.\n")
+        
+
+
+class Exoplanets():
+    """ Contains info and options for exo planets """
+
+    def __init__(self, exoplanet_choice):
+        self.exoplanet_choice = exoplanet_choice
+
+    def what_is_exoplanet(self):
+        what_is_exoplanet = "WHAT IS AN EXOPLANET"
+        print(what_is_exoplanet.center(35, '-'))
+        print("An exoplanet is a planet that is located outside our Solar System. The prefix 'exo' comes from the Greek and means 'outside'.\n" 
+              + "Exoplanets are planets that orbit a star other than our sun. They are very hard to see directly with telescopes because they\n" 
+              + "are hidden by the bright glare of the stars they orbit. Astronomers have confirmed more than 5,000 exoplanets orbiting distant\n" 
+              + "stars. Among the most prevalent is a class of worlds dubbed 'super-Earths' which are worlds ranging from some 30 to 70 percent\n" 
+              + "bigger than Earth. Scientists have categorized exoplanets into the following types: Gas giant, Neptunian, super-Earth and terrestrial.\n")
+        
+    def how_many_exoplanets(self):
+        how_many_exoplanets = "HOW MANY EXOPLANETS ARE THERE"
+        print(how_many_exoplanets.center(35, '-'))
+        print("As of August 11, 2023, there are 5,496 confirmed exoplanets in 4,091 planetary systems. Most of these exoplanets were discovered\n" 
+              + "by the Kepler space telescope. Exoplanets are planets outside the Solar System that orbit a star. Scientists discovered the\n" 
+              + "first exoplanets in the 1990s. NASA estimates that there are over 100 billion exoplanets in our galaxy. Most of the exoplanets\n" 
+              + "discovered so far are in a relatively small region of our galaxy, the Milky Way.\n")
+        
+    def unique_exoplanets(self):
+        unique_exoplanets = "MOST UNIQUE EXOPLANETS"
+        print(unique_exoplanets.center(35, '-'))
+        print("(I) Kepler-186f\n(II) 55 Cancri e\n(III) Kepler-22b\n(IV) CoRoT-7b\n"
+              + "(V) Kepler-452b\n(VI) TrES-2b\n(VII) WASP-12b\n(VIII) Kepler-16b")
+        exo_choice = input("Select a choice or enter Q to Quit: ")
+        return exo_choice
+    
+    def kepler_186f(self):
+        kepler_186f = "KEPLER-186F"
+        print(kepler_186f.center(35, '-'))
+        print("Kepler-186f is an Earth-sized planet that was discovered in the habitable zone of a star other than our sun. The planet is located\n" 
+              + "in the Cygnus constellation, about 500 light-years from Earth. It was discovered on April 17, 2014 by Elisa Quintana. Kepler-186f\n" 
+              + "has a mean radius of 4,631.7 miles and a diameter of 9,263.5 miles. It has an orbital period of 130 days. Kepler-186f is on the\n" 
+              + "outer edge of the habitable zone, where it's possible that the planet's water could freeze. However, its larger size could mean\n" 
+              + "that it has a thicker atmosphere, which could insulate the planet. \n")
+
+    def cancri(self):
+        cancri = "55 CANCRI E"
+        print(cancri.center(35, '-'))
+        print("55 Cancri e is an exoplanet located in the Milky Way Galaxy that is about twice the size of Earth. It has a surface temperature\n" 
+              + "of nearly 4,900 degrees Fahrenheit (2,700 degrees Celsius). 55 Cancri e has a mean radius of 7,422.7 miles and a diameter of\n" 
+              + "14,845 miles. It has an orbital period of 18 hours and a gravity of 20.99 m/s². Scientists believe that 55 Cancri e is made\n" 
+              + "up of mostly carbon, which has been compressed to form diamond. It's estimated that the planet could contain as much as three\n" 
+              + "times the amount of diamond that has ever been mined on Earth. 55 Cancri e was dubbed the 'diamond planet' because scientists\n" 
+              + "suggested that it was composed of diamonds and graphite. The exoplanet 55 Cancri e is about 41 light years away from Earth.\n" 
+              + "It orbits the star 55 Cancri A, which is a Sun-like star.\n")
+
+    def kepler_22b(self):
+        kepler_22b = "KEPLER-22B"
+        print(kepler_22b.center(35, '-'))
+        print("Kepler-22b is an extrasolar planet that orbits the G-type star Kepler-22. It is located in the constellation Cygnus, about 600\n" 
+              + "light-years from Earth. Kepler-22b was discovered by NASA's Kepler Space Telescope. Kepler-22b is a 'super-Earth' with a\n" 
+              + "radius of 2.38 Earth radii and an estimated mass of 36 Earth masses. It is thought to be an ocean planet, rather than having\n" 
+              + "a rocky, Earth-like composition. It is also thought to be covered in a global ocean. Kepler-22b is the first known planet to\n" 
+              + "orbit within the habitable zone of a Sun-like star. It is thought to be a promising spot to search for life. However, at 600\n" 
+              + "light-years away, further scrutiny of this world may require more powerful telescopes. Using current technology, it would take\n" 
+              + "22 million years to travel 600 light years to visit Kepler-22b.\n")
+    
+    def corot(self):
+        corot = "COROT-7B"
+        print(corot.center(35, '-'))
+        print("CoRoT-7b is a super Earth exoplanet that orbits a K-type star. It was discovered in February 2009 by ESA's planet-hunting COROT\n" 
+              + "spacecraft. CoRoT-7b is the smallest exoplanet to have its diameter measured. It has a mean radius of 6,219.2 miles and a\n" 
+              + "diameter of 12,438 miles. It takes 0.9 days to complete one orbit of its star. It races around its orbit at over 200 km per\n" 
+              + "second, at a mere 2.5 million km from its parent star. CoRoT-7b is five times heavier than Earth and has approximately the\n" 
+              + "same density, so it must be made of rock and metal, like ours. However, it orbits so close to its star that it is likely\n" 
+              + "covered with a lava ocean. CoRoT-7b is an exoplanet that orbits the star CoRoT-7 in the constellation Monoceros. It is\n" 
+              + "located about 489 light-years from Earth.\n")
+
+    def kepler_452b(self):
+        kepler_452b = "KEPLER-452B"
+        print(kepler_452b.center(35, '-'))
+        print("Kepler-452b is an exoplanet that is 60 percent larger than Earth and orbits a star that is similar to our sun. The planet is located\n" 
+              + "in the habitable zone of its star, which is 1,400 light-years away in the constellation Cygnus. Kepler-452b has a year that\n" 
+              + "is about 20 days longer than Earth's. Kepler-452b's star is a G2-type star with nearly the same temperature and mass as the\n" 
+              + "sun. However, Kepler-452b's star is 1.5 billion years older than the sun and is 20 percent brighter than the sun. Kepler-452b was\n" 
+              + "announced in 2015. It was the first near-Earth-size world to be found in the habitable zone of a star that is similar to our sun.\n")
+
+    def tres(self):
+        tres = "TRES-2B"
+        print(tres.center(35, '-'))
+        print("TrES-2b is an extrasolar planet that orbits the star GSC 03549-02811, which is located 750 light years away from the Solar System.\n" 
+              + "It was discovered by Francis T. O'Donovan as part of the Trans-Atlantic Exoplanet Survey. The planet is named after the project\n" 
+              + "that discovered it. TrES-2b is a giant ball of gas. It has a mean radius of 56,506 miles and a diameter of 113,010 miles. It has\n" 
+              + "a gravity of 32.21 m/s². In 2011, TrES-2b was identified as the darkest known exoplanet. It reflects less than 1 percent of the\n" 
+              + "light that hits it. This makes it significantly darker than coal and almost as dark as the darkest man-made substance on Earth,\n" 
+              + "which was manufactured by NASA. The extrasolar planet TrES-2b is located 750 light years away from Earth in the constellation Draco.\n")
+
+    def wasp(self): 
+        wasp = "WASP-12B"
+        print(wasp.center(35, '-'))
+        print("WASP-12b is an extrasolar planet that orbits the star WASP-12. It is a gas giant that is about twice the size of Jupiter and is\n" 
+              + "extremely close to its star, about 2 million miles away. WASP-12b is known as a 'hot Jupiter' because it is very close to its\n" 
+              + "star. It is one of the hottest planets known, much hotter than Venus. WASP-12b is orbiting its sun in just 26 hours. The star's\n" 
+              + "scorching heat is slowly stripping away and devouring the planet's atmosphere. The gravitational pull of WASP-12 has stretched\n" 
+              + "and distorted WASP-12b into an oblong, egg-like shape. The interior of WASP-12b could be dominated by pure-carbon rocks, possibly\n" 
+              + "in the form of graphite or diamonds. The atmosphere is found to have a surprising amount of methane. The exoplanet WASP-12b is\n" 
+              + "located roughly 1,200 light-years from Earth.\n")
+
+    def kepler_16b(self):
+        kepler_16b = "KEPLER-16B"
+        print(kepler_16b.center(35, '-'))
+        print("Kepler-16b is a gas giant exoplanet that orbits two stars in the Kepler-16 system. The planet is about the size of Saturn and\n" 
+              + "has a mass of about a third of Jupiter's. It is more dense than Saturn and has a temperature of 188 K (-85 °C; -121 °F).\n" 
+              + "Kepler-16b has no solid surface. Kepler-16b was discovered by NASA's Kepler mission and is located 200 light-years from\n" 
+              + "Earth. It was the first confirmed planet in a “circumbinary” orbit, which means it circles two stars instead of one.\n" 
+              + "Kepler-16b completes a nearly circular orbit every 228.776 days. Kepler-16b is not thought to harbor life, but its\n" 
+              + "discovery demonstrates the diversity of planets in our galaxy.\n")
+
 
     
-        
 def start_menu():
     print("\nChoose what to learn about...")
-    print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe")
+    print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe\n(IV) Exoplanets")
     menu_choice = input("Select a choice or enter Q to Quit: ")
     print("\n")
     return menu_choice
@@ -736,6 +849,14 @@ def blackhole_selection():
     print("\n")
     return black_hole_choice
 
+def exoplanet_selection():
+    exoplanet = "EXOPLANETS"
+    print(exoplanet.center(35, '-'))
+    print("(I) What Is An Exoplanet?\n(II) How Many Exoplanets Are There?\n(III) Most Unique Exoplanets")
+    exoplanet_choice = input("Select an option or enter Q to Quit: ")
+    print("\n")
+    return exoplanet_choice
+
 
 
 # main
@@ -753,11 +874,13 @@ while flag:
             # call start menu function - displays choices such as solar system, blackholes, stars
             menu_choice = start_menu()
             
-            while menu_choice not in ['I', 'II', 'III', 'Q']:
+            while menu_choice not in ['I', 'II', 'III', 'IV', 'Q']:
                 print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
                 menu_choice = start_menu()
 
+            
             if menu_choice == 'I':
+                #solar system
                 p_select = planet_selection()
                 planet = Solar_System(p_select)
         
@@ -890,7 +1013,62 @@ while flag:
 
                 elif b_select == 'Q':
                     flag = False
+            
 
+            elif menu_choice == 'IV':
+                #exoplanets
+                e_select = exoplanet_selection()
+                exoplanet = Exoplanets(e_select)
+
+                while e_select not in ['I', 'II', 'III', 'Q']:
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    e_select = exoplanet_selection()
+
+                if e_select == 'I':
+                    exoplanet.what_is_exoplanet()
+
+                elif e_select == 'II':
+                    exoplanet.how_many_exoplanets()
+
+                elif e_select == 'III':
+                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                    while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                        print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                        exoplanet_choice = exoplanet.unique_exoplanets()
+
+                    if exoplanet_choice == 'I':
+                        exoplanet.kepler_186f()
+
+                    elif exoplanet_choice == 'II':
+                        exoplanet.cancri()
+
+                    elif exoplanet_choice == 'III':
+                        exoplanet.kepler_22b()
+
+                    elif exoplanet_choice == 'IV':
+                        exoplanet.corot()
+
+                    elif exoplanet_choice == 'V':
+                        exoplanet.kepler_452b()
+
+                    elif exoplanet_choice == 'VI':
+                        exoplanet.tres()
+
+                    elif exoplanet_choice == 'VII':
+                        exoplanet.wasp()
+
+                    elif exoplanet_choice == 'VIII':
+                        exoplanet.kepler_16b()
+                        
+                        
+                    elif exoplanet_choice == 'Q':
+                        flag = False
+
+                elif e_select == 'Q':
+                    flag = False
+
+            
             elif menu_choice == 'Q':
                 flag = False
             
