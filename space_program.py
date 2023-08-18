@@ -1,4 +1,4 @@
-# Space Program - Contains information about objects in space such as solar system planets + sun, stars in the universe, and black holes
+# Space Program - Contains information about objects in space such as solar system planets + sun, stars in the universe, blackholes, exoplanets
 
 class Solar_System():
     """ Contains all solar system planets + sun and their info """
@@ -11,6 +11,7 @@ class Solar_System():
         print(sun_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
         sun_input = input("Enter Selection: ")
+        sun_input = sun_input.upper()  
         print("\n")
 
         while sun_input not in ['I', 'II', 'III', 'IV']: 
@@ -19,6 +20,7 @@ class Solar_System():
                 print(sun_header.center(35, '-'))
                 print("(I) Mass\n(II) Distance from Earth\n(III) Composition\n(IV) Temperature")
                 sun_input = input("Enter Selection: ")
+                sun_input = sun_input.upper()
         
         if sun_input == 'I':
             mass_info = "MASS"
@@ -34,7 +36,7 @@ class Solar_System():
                   + "plane travelling at 885 km/h (550 mph) or 177 years to \n"
                   + "drive at 96 km/h(60 mph) or 3,536 years to walk there at\n"
                   + "4.8km/h(3 mph).\n")
-        
+            
         elif sun_input == 'III':
             composition = "COMPOSITION"
             print(composition.center(35, '-'))
@@ -43,19 +45,21 @@ class Solar_System():
                   + "0.1 percent of the Sun's mass is made up of metals and other\n" 
                   + "elements.These elements include carbon, nitrogen, oxygen,\n" 
                   + "neon, iron, silicon, magnesium, and sulfur.\n")
-            
+             
         elif sun_input == 'IV':
             temperature = "TEMPERATURE"
             print(temperature.center(35, '-'))
             print("The Sun is a huge, glowing sphere of hot gas. The Sun's\n" 
                   + "surface temperature is about 10,340 degrees Fahrenheit\n" 
                   + "(5,726 degrees Celsius).\n")
-
+            
     def mercury(self):
         mercury_header = "MERCURY INFO"
         print(mercury_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         mercury_input = input("Enter Selection: ")
+        mercury_input = mercury_input.upper()
+        print("\n")
 
         while mercury_input not in ['I', 'II', 'III', 'IV', 'V']:
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -69,7 +73,7 @@ class Solar_System():
             print(mass_info.center(35, '-'))
             print("Mercury is 3.285 x 10^23 kilograms, only about 0.055\n"
                   + "times that of Earth!\n")
-            
+              
         elif mercury_input == 'II':
             distance_f_earth = "DISTANCE FROM EARTH"
             print(distance_f_earth.center(35, '-'))
@@ -78,14 +82,14 @@ class Solar_System():
                   + "furthest, it is 138 million miles from Earth. The distance\n" 
                   + "between Mercury and Earth is constantly changing because they\n" 
                   + "follow elliptical orbits around the sun.\n")
-            
+                
         elif mercury_input == 'III':
             length_of_year = "LENGTH OF YEAR"
             print(length_of_year.center(35, '-'))
             print("Since Mercury is the fastest planet and has the shortest distance\n" 
                   + "to travel around the Sun, it has the shortest year of all the\n" 
                   + "planets in our solar system - 88 days.\n")
-            
+           
         elif mercury_input == 'IV':
             composition = "COMPOSITION"
             print(composition.center(35, '-'))
@@ -97,7 +101,7 @@ class Solar_System():
                   + "density is the second highest in the Solar System, only slightly less\n" 
                   + "than Earth's density. The planet's exosphere is made up mostly of oxygen,\n" 
                   + "sodium, hydrogen, helium, and potassium.\n")
-            
+          
         elif mercury_input == 'V':
             temperature = "TEMPERATURE"
             print(temperature.center(35, '-'))
@@ -114,6 +118,8 @@ class Solar_System():
         print(venus_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         venus_input = input("Enter selection: ")
+        venus_input = venus_input.upper()
+        print("\n")
 
         while venus_input not in ['I', 'II', 'III', 'IV', 'V']: 
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -174,6 +180,8 @@ class Solar_System():
         print(earth_header.center(35, '-'))
         print("(I) Mass\n(II) Composition\n(III) Temperature")
         earth_input = input("Enter selection: ")
+        earth_input = earth_input.upper()
+        print("\n")
 
         while earth_input not in ['I', 'II', 'III']: 
                 print("\n**INVALID INPUT** Enter I, II, or III...")
@@ -214,6 +222,8 @@ class Solar_System():
         print(mars_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         mars_input = input("Enter selection: ")
+        mars_input = mars_input.upper()
+        print("\n")
 
         while mars_input not in ['I', 'II', 'III', 'IV', 'V']: 
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -281,6 +291,8 @@ class Solar_System():
         print(jupiter_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         jupiter_input = input("Enter selection: ")
+        jupiter_input = jupiter_input.upper()
+        print("\n")
 
         while jupiter_input not in ['I', 'II', 'III', 'IV', 'V']: 
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -338,6 +350,8 @@ class Solar_System():
         print(saturn_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         saturn_input = input("Enter selection: ")
+        saturn_input = saturn_input.upper()
+        print("\n")
 
         while saturn_input not in ['I', 'II', 'III', 'IV', 'V']:
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -395,6 +409,8 @@ class Solar_System():
         print(uranus_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         uranus_input = input("Enter selection: ")
+        uranus_input = uranus_input.upper()
+        print("\n")
 
         while uranus_input not in ['I', 'II', 'III', 'IV', 'V']: 
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -449,6 +465,8 @@ class Solar_System():
         print(neptune_header.center(35, '-'))
         print("(I) Mass\n(II) Distance from Earth\n(III) Length of Year\n(IV) Composition\n(V) Temperature")
         neptune_input = input("Enter selection: ")
+        neptune_input = neptune_input.upper()
+        print("\n")
 
         while neptune_input not in ['I', 'II', 'III', 'IV', 'V']: 
                 print("\n**INVALID INPUT** Enter I, II, III, IV, or V...")
@@ -540,6 +558,7 @@ class Stars():
         print(big_stars.center(35, '-'))
         print("(I) VY Canis Majoris\n(II) WOH G64\n(III) V354 Cephei\n(IV) UY Scuti\n(V) KY Cygni")
         big_star_choice = input("Select a choice or enter Q to Quit: ")
+        big_star_choice = big_star_choice.upper()
         print("\n")
         return big_star_choice
     
@@ -578,7 +597,7 @@ class Stars():
               + "larger than the Sun. It has a maximum brightness of magnitude 8.29 and a minimum of magnitude 10.56. UY Scuti is\n" 
               + "also classified as a pulsating variable star, with an approximate pulsation period of 740 days. It is a dust-\n"
               + "enshrouded bright red supergiant. UY Scuti was discovered in 1860. It is approximately 9,500 light-years away.\n"
-              + "from earth.")
+              + "from earth.\n")
 
     def cygni(self):
         cygni = "KY CYGNI"
@@ -646,6 +665,7 @@ class Blackholes():
         print(biggest_blackholes.center(35, '-'))
         print("(I) Phoenix A\n(II) TON 618\n(III) Holm 15A\n(IV) IC 1101\n(V) S5 0014+81")
         blackhole_choice = input("Select a choice or enter Q to Quit: ")
+        blackhole_choice = blackhole_choice.upper()
         print("\n")
         return blackhole_choice
     
@@ -724,6 +744,8 @@ class Exoplanets():
         print("(I) Kepler-186f\n(II) 55 Cancri e\n(III) Kepler-22b\n(IV) CoRoT-7b\n"
               + "(V) Kepler-452b\n(VI) TrES-2b\n(VII) WASP-12b\n(VIII) Kepler-16b")
         exo_choice = input("Select a choice or enter Q to Quit: ")
+        exo_choice = exo_choice.upper()
+        print("\n")
         return exo_choice
     
     def kepler_186f(self):
@@ -814,6 +836,7 @@ def start_menu():
     print("\nChoose what to learn about...")
     print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe\n(IV) Exoplanets")
     menu_choice = input("Select a choice or enter Q to Quit: ")
+    menu_choice = menu_choice.upper()
     print("\n")
     return menu_choice
 
@@ -829,6 +852,7 @@ def planet_selection():
     print("(I) Sun\n(II) Mercury\n(III) Venus\n(IV) Earth\n(V) Mars\n(VI) Jupiter\n"
           + "(VII) Saturn\n(VIII) Uranus\n(IX) Neptune\n")
     planet_choice = input("Select a Planet or the Sun or enter Q to Quit: ")
+    planet_choice = planet_choice.upper()
     print("\n")
     return planet_choice
 
@@ -837,6 +861,7 @@ def star_selection():
     print(stars.center(35, '-'))
     print("(I) What is a star?\n(II) What are stars made of?\n(III) How do stars form?\n(IV) Biggest Stars in the Universe")
     star_choice = input("Select an option or enter Q to Quit: ")
+    star_choice = star_choice.upper()
     print("\n")
     return star_choice
 
@@ -846,6 +871,7 @@ def blackhole_selection():
     print("(I) What Is a Black Hole?\n(II) How Do Black Holes Form?\n(III) What Is Inside a Black Hole?\n" 
           + "(IV) What Would Happen if You Entered a Black Hole?\n(V) Nearest Black Hole to Earth\n(VI) Biggest Known Black Holes")
     black_hole_choice = input("Select and option or enter Q to Quit: ")
+    black_hole_choice = black_hole_choice.upper()
     print("\n")
     return black_hole_choice
 
@@ -854,6 +880,7 @@ def exoplanet_selection():
     print(exoplanet.center(35, '-'))
     print("(I) What Is An Exoplanet?\n(II) How Many Exoplanets Are There?\n(III) Most Unique Exoplanets")
     exoplanet_choice = input("Select an option or enter Q to Quit: ")
+    exoplanet_choice = exoplanet_choice.upper()
     print("\n")
     return exoplanet_choice
 
@@ -864,6 +891,7 @@ flag = program_start()
 while flag:
         
         start = input("Enter C to Continue or Q to Quit: ")
+        start = start.upper()
         while start != 'C' and start != 'Q':
             start = input("\n**INVALID INPUT**\nEnter C to Continue or Q to Quit: ")
         
@@ -875,92 +903,465 @@ while flag:
             menu_choice = start_menu()
             
             while menu_choice not in ['I', 'II', 'III', 'IV', 'Q']:
-                print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                 menu_choice = start_menu()
 
-            
             if menu_choice == 'I':
                 #solar system
                 p_select = planet_selection()
                 planet = Solar_System(p_select)
         
                 while p_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'Q']:
-                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                     p_select = planet_selection()
 
                 if p_select == 'I':
                     planet.sun()
+                    
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.sun()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif p_select == 'II':
                     planet.mercury()
+                    
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.mercury()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif p_select == 'III':
                     planet.venus()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.venus()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif p_select == 'IV':
                     planet.earth()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.earth()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif p_select == 'V':
                     planet.mars()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.mars()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
             
                 elif p_select == 'VI':
                     planet.jupiter()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.jupiter()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif p_select == 'VII':
                     planet.saturn()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.saturn()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif p_select == 'VIII':
                     planet.uranus()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.uranus()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif p_select == 'IX':
                     planet.neptune()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            planet.neptune()
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif p_select == 'Q':
                     flag = False
             
-
             elif menu_choice == 'II':
                 #stars
                 s_select = star_selection()
                 star = Stars(s_select)
 
                 while s_select not in ['I', 'II', 'III', 'IV', 'Q']:
-                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                     s_select = star_selection()
                 
                 if s_select == 'I':
                     star.what_is_star()
+
+                    # working so far -- check for user input
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            s_select = star_selection()
+
+                            while s_select not in ['I', 'II', 'III', 'IV', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                s_select = star_selection()
+
+                            if s_select == 'I':
+                                star.what_is_star()
+
+                            elif s_select == 'II':
+                                star.star_composition()
+
+                            elif s_select == 'III':
+                                star.star_formation()
+
+                            elif s_select == 'IV':                      
+                                big_star_choice = star.biggest_stars()
+
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                 
                 elif s_select == 'II':
                     star.star_composition()
                 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            s_select = star_selection()
+
+                            while s_select not in ['I', 'II', 'III', 'IV', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                s_select = star_selection()
+
+                            if s_select == 'I':
+                                star.what_is_star()
+
+                            elif s_select == 'II':
+                                star.star_composition()
+
+                            elif s_select == 'III':
+                                star.star_formation()
+
+                            elif s_select == 'IV':                      
+                                big_star_choice = star.biggest_stars()
+
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+                
                 elif s_select == 'III':
                     star.star_formation()
-                
-                elif s_select == 'IV':
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            s_select = star_selection()
+
+                            while s_select not in ['I', 'II', 'III', 'IV', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                s_select = star_selection()
+
+                            if s_select == 'I':
+                                star.what_is_star()
+
+                            elif s_select == 'II':
+                                star.star_composition()
+
+                            elif s_select == 'III':
+                                star.star_formation()
+
+                            elif s_select == 'IV':                      
+                                big_star_choice = star.biggest_stars()
+
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                elif s_select == 'IV':                      
                     big_star_choice = star.biggest_stars()
                     
                     if big_star_choice == 'I':
                         star.canis_majoris()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                big_star_choice = star.biggest_stars()
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+                    
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                     
                     elif big_star_choice == 'II':
                         star.woh()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                big_star_choice = star.biggest_stars()
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+                    
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                     
                     elif big_star_choice == 'III':
                         star.cephei()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                big_star_choice = star.biggest_stars()
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+                    
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                     
                     elif big_star_choice == 'IV':
                         star.scuti()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                big_star_choice = star.biggest_stars()
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+                    
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                     
                     elif big_star_choice == 'V':
                         star.cygni()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                big_star_choice = star.biggest_stars()
+                                if big_star_choice == 'I':
+                                    star.canis_majoris()
+                    
+                                elif big_star_choice == 'II':
+                                    star.woh()
+                    
+                                elif big_star_choice == 'III':
+                                    star.cephei()
+                    
+                                elif big_star_choice == 'IV':
+                                    star.scuti()
+                    
+                                elif big_star_choice == 'V':
+                                    star.cygni()
+
+                                elif big_star_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif big_star_choice == 'Q':
                         flag = False
+                        break
 
                 elif s_select == 'Q':
-                    flag = False 
-
+                    flag = False
+                    break
 
             elif menu_choice == 'III':
                 #blackholes
@@ -968,45 +1369,520 @@ while flag:
                 blackhole = Blackholes(b_select)
 
                 while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
-                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                     b_select = blackhole_selection()
 
                 if b_select == 'I':
                     blackhole.what_is_blackhole()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            b_select = blackhole_selection()
+
+                            while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                b_select = blackhole_selection()
+
+                            if b_select == 'I':
+                                blackhole.what_is_blackhole()
+
+                            elif b_select == 'II':
+                                blackhole.blackhole_formation()
+
+                            elif b_select == 'III':
+                                blackhole.inside_blackhole()
+
+                            elif b_select == 'IV':                      
+                                blackhole.enter_blackhole()
+
+                            elif b_select == 'V':
+                                blackhole.nearest_bh_earth()
+
+                            elif b_select == 'VI':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif b_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif b_select == 'II':
                     blackhole.blackhole_formation()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            b_select = blackhole_selection()
+
+                            while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                b_select = blackhole_selection()
+
+                            if b_select == 'I':
+                                blackhole.what_is_blackhole()
+
+                            elif b_select == 'II':
+                                blackhole.blackhole_formation()
+
+                            elif b_select == 'III':
+                                blackhole.inside_blackhole()
+
+                            elif b_select == 'IV':                      
+                                blackhole.enter_blackhole()
+
+                            elif b_select == 'V':
+                                blackhole.nearest_bh_earth()
+
+                            elif b_select == 'VI':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif b_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif b_select == 'III':
                     blackhole.inside_blackhole()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            b_select = blackhole_selection()
+
+                            while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                b_select = blackhole_selection()
+
+                            if b_select == 'I':
+                                blackhole.what_is_blackhole()
+
+                            elif b_select == 'II':
+                                blackhole.blackhole_formation()
+
+                            elif b_select == 'III':
+                                blackhole.inside_blackhole()
+
+                            elif b_select == 'IV':                      
+                                blackhole.enter_blackhole()
+
+                            elif b_select == 'V':
+                                blackhole.nearest_bh_earth()
+
+                            elif b_select == 'VI':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif b_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif b_select == 'IV':
                     blackhole.enter_blackhole()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            b_select = blackhole_selection()
+
+                            while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                b_select = blackhole_selection()
+
+                            if b_select == 'I':
+                                blackhole.what_is_blackhole()
+
+                            elif b_select == 'II':
+                                blackhole.blackhole_formation()
+
+                            elif b_select == 'III':
+                                blackhole.inside_blackhole()
+
+                            elif b_select == 'IV':                      
+                                blackhole.enter_blackhole()
+
+                            elif b_select == 'V':
+                                blackhole.nearest_bh_earth()
+
+                            elif b_select == 'VI':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif b_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif b_select == 'V':
                     blackhole.nearest_bh_earth()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            b_select = blackhole_selection()
+
+                            while b_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                b_select = blackhole_selection()
+
+                            if b_select == 'I':
+                                blackhole.what_is_blackhole()
+
+                            elif b_select == 'II':
+                                blackhole.blackhole_formation()
+
+                            elif b_select == 'III':
+                                blackhole.inside_blackhole()
+
+                            elif b_select == 'IV':                      
+                                blackhole.enter_blackhole()
+
+                            elif b_select == 'V':
+                                blackhole.nearest_bh_earth()
+
+                            elif b_select == 'VI':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif b_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif b_select == 'VI':
                     blackhole_choice = blackhole.biggest_blackholes()
 
                     while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
-                        print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                        print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                         blackhole_choice = blackhole.biggest_blackholes()
 
                     if blackhole_choice == 'I':
                         blackhole.phoenix_a()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    # add these two lines to other cases in program
+                                    flag = False
+                                    break
+                                        
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+                            
                     elif blackhole_choice == 'II':
                         blackhole.ton_618()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    # add these two lines to other cases in program
+                                    flag = False
+                                    break
+                                        
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                     elif blackhole_choice == 'III':
                         blackhole.holm_15A()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    # add these two lines to other cases in program
+                                    flag = False
+                                    break
+                                        
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif blackhole_choice == 'IV':
                         blackhole.ic_1101()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    # add these two lines to other cases in program
+                                    flag = False
+                                    break
+                                        
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif blackhole_choice == 'V':
                         blackhole.s5_0014()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                blackhole_choice = blackhole.biggest_blackholes()
+
+                                while blackhole_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                    blackhole_choice = blackhole.biggest_blackholes()
+
+                                if blackhole_choice == 'I':
+                                    blackhole.phoenix_a()
+
+                                elif blackhole_choice == 'II':
+                                    blackhole.ton_618()
+
+                                elif blackhole_choice == 'III':
+                                    blackhole.holm_15A()
+
+                                elif blackhole_choice == 'IV':
+                                    blackhole.ic_1101()
+
+                                elif blackhole_choice == 'V':
+                                    blackhole.s5_0014()
+
+                                elif blackhole_choice == 'Q':
+                                    # add these two lines to other cases in program
+                                    flag = False
+                                    break
+                                        
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                     elif blackhole_choice == 'Q':
                         flag = False
@@ -1014,7 +1890,6 @@ while flag:
                 elif b_select == 'Q':
                     flag = False
             
-
             elif menu_choice == 'IV':
                 #exoplanets
                 e_select = exoplanet_selection()
@@ -1027,8 +1902,120 @@ while flag:
                 if e_select == 'I':
                     exoplanet.what_is_exoplanet()
 
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            e_select = exoplanet_selection()
+
+                            while e_select not in ['I', 'II', 'III', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                e_select = exoplanet_selection()
+                            
+                            if e_select == 'I':
+                                exoplanet.what_is_exoplanet()
+
+                            elif e_select == 'II':
+                                exoplanet.how_many_exoplanets()
+
+                            elif e_select == 'III':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+                                
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                 elif e_select == 'II':
                     exoplanet.how_many_exoplanets()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            e_select = exoplanet_selection()
+
+                            while e_select not in ['I', 'II', 'III', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                e_select = exoplanet_selection()
+                            
+                            if e_select == 'I':
+                                exoplanet.what_is_exoplanet()
+
+                            elif e_select == 'II':
+                                exoplanet.how_many_exoplanets()
+
+                            elif e_select == 'III':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+                                
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                        elif go_again == 'N':
+                            break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                 elif e_select == 'III':
                     exoplanet_choice = exoplanet.unique_exoplanets()
@@ -1040,39 +2027,379 @@ while flag:
                     if exoplanet_choice == 'I':
                         exoplanet.kepler_186f()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif exoplanet_choice == 'II':
                         exoplanet.cancri()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                     elif exoplanet_choice == 'III':
                         exoplanet.kepler_22b()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif exoplanet_choice == 'IV':
                         exoplanet.corot()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                     elif exoplanet_choice == 'V':
                         exoplanet.kepler_452b()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif exoplanet_choice == 'VI':
                         exoplanet.tres()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
 
                     elif exoplanet_choice == 'VII':
                         exoplanet.wasp()
 
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
+                        
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
                     elif exoplanet_choice == 'VIII':
                         exoplanet.kepler_16b()
+
+                        while True:
+                            go_again = input("Would you like to choose another option? (Y/N): ")
+                            go_again = go_again.upper()  # Convert input to uppercase
+                            if go_again == 'Y':
+                                exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                while exoplanet_choice not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Q']:
+                                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...\n")
+                                    exoplanet_choice = exoplanet.unique_exoplanets()
+
+                                if exoplanet_choice == 'I':
+                                    exoplanet.kepler_186f()
+
+                                elif exoplanet_choice == 'II':
+                                    exoplanet.cancri()
+
+                                elif exoplanet_choice == 'III':
+                                    exoplanet.kepler_22b()
+
+                                elif exoplanet_choice == 'IV':
+                                    exoplanet.corot()
+
+                                elif exoplanet_choice == 'V':
+                                    exoplanet.kepler_452b()
+
+                                elif exoplanet_choice == 'VI':
+                                    exoplanet.tres()
+
+                                elif exoplanet_choice == 'VII':
+                                    exoplanet.wasp()
+
+                                elif exoplanet_choice == 'VIII':
+                                    exoplanet.kepler_16b()
                         
+                                elif exoplanet_choice == 'Q':
+                                    flag = False
+                                    break
+
+                            elif go_again == 'N':
+                                break
+                            else:
+                                print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
                         
                     elif exoplanet_choice == 'Q':
                         flag = False
+                        break
 
                 elif e_select == 'Q':
                     flag = False
 
-            
             elif menu_choice == 'Q':
                 flag = False
-            
-        else:
-            end_case = input("\n**INVALID INPUT**\nEnter C to Continue or Q to Quit: ")
-            if end_case == 'Q':
-                flag = False
+
+#end
