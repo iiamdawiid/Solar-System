@@ -1,4 +1,4 @@
-# Space Program - Contains information about objects in space such as solar system planets + sun, stars in the universe, blackholes, exoplanets
+# Space Program - Contains information about objects in space such as solar system planets + sun, stars in the universe, blackholes, exoplanets, and travel the universe
 
 class Solar_System():
     """ Contains all solar system planets + sun and their info """
@@ -831,10 +831,149 @@ class Exoplanets():
               + "discovery demonstrates the diversity of planets in our galaxy.\n")
 
 
+
+class TravelTheUniverse():
+    '''Ask user to select where to travel in the Universe. 
+       User then inputs speed of choice. Program prints how long it would 
+       take to get there at user's chosen speed'''
+    
+    def __init__(self, dest_choice):
+        self.dest_choice = dest_choice
+        self.lightspeed_mph = 670616629.3844   # Speed of light in mph
+        self.lightyear_miles = 5878625377600   # Number of miles in a light year
+                   
+    def ton_618(self):
+        ton_618 = "BLACKHOLE: TON 618"
+        print(ton_618.center(35, '-'))
+        print("TON 618 is a quasar and the largest known black hole in the universe. It's located near the border of the constellations\n" 
+              + "Canes Venatici and Coma Berenices. It's about 18.2 billion light-years away from Earth!\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly =  1.82e10
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {time_to_dest} years at {speed} MPH!")
+    
+    def andromeda(self):
+        andromeda = "ANDROMEDA GALAXY"
+        print(andromeda.center(35, '-'))
+        print("The Andromeda Galaxy is a galaxy with a diameter of 220,000 light years and a mean radius of 110,000 light years. It is\n" 
+              + "located in the Andromeda constellation and is estimated to be 10,010,000,000 years old. The Andromeda Galaxy has\n" 
+              + "1,000,000,000,000 stars and an apparent mass of about 1,230,000,000,000 solar masses. At approximately 2.5 million\n" 
+              + "light-years away, the Andromeda galaxy, or M31, is our Milky Way's largest galactic neighbor!\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 2.537e6 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+    
+    def proxima(self):
+        proxima = "PROXIMA CENTAURI"
+        print(proxima.center(35, '-'))
+        print("Proxima Centauri is a red dwarf star located in the constellation Centaurus. It is the closest star to the Sun, located\n" 
+              + "4.2465 light-years away.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 4.246 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def carinae(self):
+        carinae = "ETA CARINAE"
+        print(carinae.center(35, '-'))
+        print("Eta Carinae is a binary star system located in the constellation Carina. It is one of the brightest and most massive\n" 
+              + "stars in the Milky Way Galaxy. The star system is located about 7,500 light-years from Earth. It is also known as Eta Argus.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 7500 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def voyager(self):
+        voyager = "VOYAGER 1 SPACE PROBE"
+        print(voyager.center(35, '-'))
+        print("Voyager 1 is a robotic space probe launched by NASA in 1977 to study the outer solar system and interstellar space. It was the\n" 
+              + "first spacecraft to travel beyond the solar system and enter interstellar space. Voyager 1 is still exploring the cosmos today.\n"
+              + "Voyager 1 is currently 14.5 billion miles (23.3 billion kilometers) from Earth.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 0.00246 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def bootes(self):
+        bootes = "BOOTES VOID"
+        print(bootes.center(35, '-'))
+        print("The Boötes Void is a large, spherical region of space that contains very few galaxies. It is located near the constellation Boötes\n" 
+              + "and is about 700 million light years from Earth. The Boötes Void is also known as the Great Void or the Supervoid.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 7e8 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def centauri(self):
+        centauri = "ALPHA CENTAURI"
+        print(centauri.center(35, '-'))
+        print("Alpha Centauri is a triple star system located in the constellation Centaurus. It is the closest star system to the solar system, and\n" 
+              + "one of its stars is the nearest star to our planet other than the sun.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 4.367 # distance in light years
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def hd1(self):
+        hd1 = "GALAXY HD1"
+        print(hd1.center(35, '-'))
+        print("HD1 is a galaxy that may be the most distant object ever seen by astronomers. It is estimated to be 13.5 billion light-years away, which\n" 
+              + "is 100 million light-years further than the current record holder, GN-z11. HD1 is thought to have existed 300 million years after the\n" 
+              + "Big Bang, which is thought to have created the universe. HD1 may have been forming stars at a rate of about 100 per year.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 1.35e1010 # distance in light years - VERY FAR
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def milky_way(self):
+        milky_way = "CENTER OF THE MILKY WAY"
+        print(milky_way.center(35, '-'))
+        print("The center of the Milky Way is located in the southern constellation Sagittarius, which is about 26,000 light-years away. The center of the\n" 
+              + "galaxy is shrouded by dust and gas clouds, so we can't see directly into it. The center of the Milky Way is home to a supermassive black\n" 
+              + "hole called Sagittarius A*. This black hole is about 4 million times the mass of the sun. It was discovered in 1974 and is the nearest\n" 
+              + "supermassive black hole to Earth.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 26000 # distance in light years - VERY FAR
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+    def sun(self):
+        sun = "THE SUN"
+        print(sun.center(35, '-'))
+        print("The sun is a star at the center of the solar system. It is the largest object in the solar system, making up 99.8 percent of its mass.\n" 
+              + "The sun is about 93 million miles from Earth.\n")
+        speed = input("Input a speed in MPH: ")
+        # Convert speed to light years per year
+        distance_ly = 1.5820024937e-5 # distance in light years - VERY FAR
+        ly_per_year = int(speed) / self.lightyear_miles
+        time_to_dest = distance_ly / ly_per_year
+        print(f"Duration of trip: {int(time_to_dest)} years at {speed} MPH!")
+
+
     
 def start_menu():
     print("\nChoose what to learn about...")
-    print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe\n(IV) Exoplanets")
+    print("(I) Solar System\n(II) Stars in the Universe\n(III) Blackholes in the Universe\n(IV) Exoplanets\n"
+          + "(V)Travel The Universe")
     menu_choice = input("Select a choice or enter Q to Quit: ")
     menu_choice = menu_choice.upper()
     print("\n")
@@ -884,6 +1023,17 @@ def exoplanet_selection():
     print("\n")
     return exoplanet_choice
 
+def travel_universe_selection():
+    travel_the_universe = "TRAVEL THE UNIVERSE"
+    print(travel_the_universe.center(35, '-'))
+    print("(I) TON 618\n(II) Nearest Galaxy: Andromeda\n(III) Nearest Star: Proxima Centauri\n(IV) Most Massive Known Star: Eta Carinae\n"
+          + "(V) Voyager 1 Space Probe\n(VI) Bootes Void\n(VII) Nearest Earth-like Planet: Proxima Centauri b\n"
+          + "(VIII) Most Distant Object Seen From Earth: Galaxy HD1\n(IX) Center of the Milky Way\n(X) Sun")
+    travel_choice = input("Select an option or enter Q to Quit: ")
+    travel_choice = travel_choice.upper()
+    print("\n")
+    return travel_choice
+
 
 
 # main
@@ -902,7 +1052,7 @@ while flag:
             # call start menu function - displays choices such as solar system, blackholes, stars
             menu_choice = start_menu()
             
-            while menu_choice not in ['I', 'II', 'III', 'IV', 'Q']:
+            while menu_choice not in ['I', 'II', 'III', 'IV', 'V', 'Q']:
                 print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
                 menu_choice = start_menu()
 
@@ -2397,6 +2547,547 @@ while flag:
                         break
 
                 elif e_select == 'Q':
+                    flag = False
+            
+            elif menu_choice == 'V':
+                u_select = travel_universe_selection()
+                travel_universe = TravelTheUniverse(u_select)
+
+                while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                    print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                    u_select = travel_universe_selection()
+                
+                if u_select == 'I':
+                    travel_universe.ton_618()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+                            
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+                
+                if u_select == 'II':
+                    travel_universe.andromeda()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'III':
+                    travel_universe.proxima()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'IV':
+                    travel_universe.carinae()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'V':
+                    travel_universe.voyager()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'VI':
+                    travel_universe.bootes()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'VII':
+                    travel_universe.centauri()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'VIII':
+                    travel_universe.hd1()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'IX':
+                    travel_universe.milky_way()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                if u_select == 'X':
+                    travel_universe.voyager()
+
+                    while True:
+                        go_again = input("Would you like to choose another option? (Y/N): ")
+                        go_again = go_again.upper()  # Convert input to uppercase
+                        if go_again == 'Y':
+                            print("\n")
+                            u_select = travel_universe_selection()
+
+                            while u_select not in ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'Q']:
+                                print("\n**INVALID INPUT**\nPlease enter a valid numeral...")
+                                u_select = travel_universe_selection()
+                            
+                            if u_select == 'I':
+                                travel_universe.ton_618()
+                            
+                            elif u_select == 'II':
+                                travel_universe.andromeda()
+                            
+                            elif u_select == 'III':
+                                travel_universe.proxima()
+
+                            elif u_select == 'IV':
+                                travel_universe.carinae()
+
+                            elif u_select == 'V':
+                                travel_universe.voyager()
+
+                            elif u_select == 'VI':
+                                travel_universe.bootes()
+
+                            elif u_select == 'VII':
+                                travel_universe.centauri()
+
+                            elif u_select == 'VIII':
+                                travel_universe.hd1()
+
+                            elif u_select == 'IX':
+                                travel_universe.milky_way()
+
+                            elif u_select == 'X':
+                                travel_universe.sun()
+
+                            elif u_select == 'Q':
+                                flag = False
+                                break
+
+                        elif go_again == 'N':
+                                break
+                        else:
+                            print("\n**INVALID INPUT**\nPlease enter Y or N...\n")
+
+                elif u_select == 'Q':
                     flag = False
 
             elif menu_choice == 'Q':
